@@ -18,8 +18,10 @@
         android:text="Jugar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
 
     <Button
         android:id="@+id/verde"
@@ -28,7 +30,6 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="152dp"
         android:backgroundTint="#5FCC1A"
-        android:text="Verde"
         app:iconTint="#00A12424"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,10 +39,11 @@
         android:layout_width="121dp"
         android:layout_height="88dp"
         android:layout_marginTop="152dp"
-        android:layout_marginEnd="48dp"
-        android:backgroundTint="#EC3A3A"
-        android:text="Rojo"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#E82929"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/verde"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -52,7 +54,6 @@
         android:layout_marginTop="124dp"
         android:layout_marginBottom="202dp"
         android:backgroundTint="#F3DC19"
-        android:text="Amarillo"
         app:layout_constraintBottom_toTopOf="@+id/jugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verde" />
@@ -61,17 +62,19 @@
         android:id="@+id/azul"
         android:layout_width="120dp"
         android:layout_height="91dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginEnd="71dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="156dp"
-        android:text="Azul"
+        android:backgroundTint="#0F2DD3"
         app:layout_constraintBottom_toTopOf="@+id/jugar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toEndOf="@+id/amarillo" />
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toEndOf="@+id/amarillo"
+        app:layout_constraintTop_toBottomOf="@+id/rojo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/texto"
         android:layout_width="225dp"
         android:layout_height="65dp"
         android:layout_gravity="center_horizontal"
@@ -79,7 +82,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="93dp"
         android:layout_marginBottom="71dp"
-        android:text="SIMON DICE"
+        android:text="SIMÓN DICE"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
@@ -89,15 +92,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="60dp"
         android:layout_height="56dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
         android:text="0"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="462dp" />
+        app:layout_constraintBottom_toTopOf="@+id/jugar"
+        app:layout_constraintEnd_toStartOf="@+id/azul"
+        app:layout_constraintStart_toEndOf="@+id/amarillo"
+        app:layout_constraintTop_toBottomOf="@+id/texto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
