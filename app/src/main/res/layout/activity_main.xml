@@ -10,51 +10,45 @@
         android:id="@+id/jugar"
         android:layout_width="102dp"
         android:layout_height="65dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="583dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="100dp"
         android:backgroundTint="#404040"
-        android:text="Jugar"
+        android:text="@string/jugar"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.86"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/verde"
         android:layout_width="120dp"
         android:layout_height="91dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="71dp"
         android:backgroundTint="#5FCC1A"
         app:iconTint="#00A12424"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/texto" />
 
     <Button
         android:id="@+id/rojo"
         android:layout_width="121dp"
         android:layout_height="88dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="71dp"
         android:backgroundTint="#E82929"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/verde"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/texto" />
 
     <Button
         android:id="@+id/amarillo"
         android:layout_width="125dp"
         android:layout_height="91dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="202dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="85dp"
         android:backgroundTint="#F3DC19"
-        app:layout_constraintBottom_toTopOf="@+id/jugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verde" />
 
@@ -62,16 +56,11 @@
         android:id="@+id/azul"
         android:layout_width="120dp"
         android:layout_height="91dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="88dp"
         android:backgroundTint="#0F2DD3"
-        app:layout_constraintBottom_toTopOf="@+id/jugar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
         app:layout_constraintStart_toEndOf="@+id/amarillo"
-        app:layout_constraintTop_toBottomOf="@+id/rojo"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/rojo" />
 
     <TextView
         android:id="@+id/texto"
@@ -82,30 +71,30 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="93dp"
         android:layout_marginBottom="71dp"
-        android:text="SIMÓN DICE"
+        android:text="@string/sim_n_dice"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/verde"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="60dp"
         android:layout_height="56dp"
-        android:layout_marginTop="381dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="56dp"
-        android:text="0"
+        android:text="@string/_0"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/jugar"
-        app:layout_constraintEnd_toStartOf="@+id/azul"
-        app:layout_constraintStart_toEndOf="@+id/amarillo"
-        app:layout_constraintTop_toBottomOf="@+id/texto" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
