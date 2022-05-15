@@ -48,7 +48,7 @@
         android:layout_height="91dp"
         android:layout_marginStart="65dp"
         android:layout_marginTop="85dp"
-        android:backgroundTint="#F3DC19"
+        android:backgroundTint="#EDDB41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verde" />
 

@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                         val job = CoroutineScope(Dispatchers.Main).launch {
                         }
                         delay(500)
-                        amarillo.setBackgroundColor(Color.parseColor("#F3DC19"))
+                        amarillo.setBackgroundColor(Color.parseColor("#EDDB41"))
                         delay(300)
                     }
                     4->{
